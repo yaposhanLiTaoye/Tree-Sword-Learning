@@ -1,0 +1,3 @@
+【sed】
+sed  's/^\(int PlayerWeapon\).*/\1 = 17/g'   sn01_.pst   
+将文件sn01_.pst中以int PlayerWeapon 起首的行替换成int PlayerWeapon = 17，注意这里小括号括起来表示标识一段，后面用\1引用   
