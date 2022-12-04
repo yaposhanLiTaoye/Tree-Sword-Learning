@@ -4,3 +4,6 @@ sed  's/^\(int PlayerWeapon\).*/\1 = 17/g'   sn01_.pst
 
 在脚本中使用sed去替换匹配行时，如果使用到了shell 变量，则应使用双引号，例如
 sed -i "s/^ntpList=.*/ntpList=${var}/g"  file.txt
+
+在匹配到xxx的行末尾加上字符串yyy
+sed "/xxx/  s/$/yyy/g"    file.txt
